@@ -1,0 +1,9 @@
+*.swp
+*.dvi
+*.pdf
+
+# tex-related temporary files
+*.aux
+*.log
+*.toc
+*.synctex.gz
