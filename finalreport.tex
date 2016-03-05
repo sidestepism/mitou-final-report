@@ -4,6 +4,13 @@
 \usepackage{url}
 \begin{document}
 
+% 見出しコマンド
+\newcommand{\heading}[1]{
+    \vspace{0.1in}
+    {\noindent {\underline {\textsf {\textbf #1}}}}
+    \hspace{0.05in}
+}
+
 %図番号に節番号を付加。節番号-図番号(図番号は節ごとに付ける)。
 %http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/011.html
  \makeatletter
@@ -21,7 +28,7 @@
   \makeatother
 
 \title{空間知覚拡張のための``聞こえる化''デバイスの開発\\最終成果報告書}
-\author{和家尚希 宗像悠里 鈴木良平 伏見遼平}
+\author{和家尚希 伏見遼平 鈴木良平 宗像悠里}
 \maketitle
 
 \tableofcontents % 目次
