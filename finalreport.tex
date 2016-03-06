@@ -1,16 +1,10 @@
 %!TEX encoding = UTF-8 Unicode
-\documentclass[11pt]{jsarticle}
+\documentclass[a4paper,12pt]{jsarticle}
+\usepackage[dvips]{graphicx}
+\usepackage{url}
 \usepackage[dvips]{graphicx}
 \usepackage{url}
 \begin{document}
-
-% 見出しコマンド
-\newcommand{\heading}[1]{
-    \vspace{0.1in}
-    {\noindent {\underline {\textsf {\textbf #1}}}}
-    \hspace{0.05in}
-}
-
 %図番号に節番号を付加。節番号-図番号(図番号は節ごとに付ける)。
 %http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/011.html
  \makeatletter
@@ -26,30 +20,76 @@
     \thesection.\arabic{table}}
    \@addtoreset{table}{section}
   \makeatother
+  
+% 見出しコマンド
+\newcommand{\heading}[1]{
+\vspace{0.1in}
+{\noindent {\underline {\textsf {\textbf #1}}}}
+\hspace{0.05in}
+}
+% 表紙
+% 契約番号を入れるので\maketitleではなくpicture環境でad-hocに
+\begin{picture}(420,520)(0,0)
+%契約番号（必須）
+\put(340,470){\makebox(50,5)[l]{\normalsize{2015情財第XXXX号}}}
+%事業名（必須）
+\put(140,350){\makebox(100,15)[c]{\LARGE{2015年度未踏IT人材発掘・育成事業}}}
+%プロジェクト名1行目（必須）
+\put(140,320){\makebox(100,15)[c]{\LARGE{空間知覚拡張のための``聞こえる化''デバイスの開発}}}
+%プロジェクト名2行目（1行で収まらない場合）
+%\put(140,290){\makebox(100,15)[c]{\LARGE{プロジェクト名2行目}}}
+%報告書名（必須、プロジェクト名2行目が無い場合は\put(140,290)）
+\put(140,260){\makebox(100,15)[c]{\LARGE{成果報告書}}}
+%クリエータ一人目（必須、人数に応じて\putの位置を調整）
+\put(140,160){\makebox(100,10)[c]{\Large{クリエータ：和家尚希}}}
+%クリエータ二人目（必要に応じて行を追加）
+\put(140,130){\makebox(100,10)[c]{\Large{　　　　　　伏見遼平}}}
+\put(140,100){\makebox(100,10)[c]{\Large{　　　　　　鈴木良平}}}
+\put(140,70){\makebox(100,10)[c]{\Large{　　　　　　宗像悠里}}}
+% 担当PM名（必須、クリエータが一人ならば\put(140,70)）
+\put(140,40){\makebox(100,10)[c]{\Large{担当PM：石黒浩}}}
+%日付（必須、通常は契約最終日）
+\put(140,10){\makebox(100,15)[c]{\Large{2016年3月11日}}}
+\end{picture}
+\thispagestyle{empty}
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+%\clearpage
+%\listoffigures % 図目次を入れてもOK
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
-\title{空間知覚拡張のための``聞こえる化''デバイスの開発\\最終成果報告書}
-\author{和家尚希 伏見遼平 鈴木良平 宗像悠里}
-\maketitle
-
-\tableofcontents % 目次
-\thispagestyle{empty} % ページ数を表示しない
-
-% はじめに
+% ここから本文
+% はじめに->要約
 \include{introduction}
 
-% 開発の動機
+% 開発の動機->背景及び目的
 \include{motivation}
+%追加：プロジェクト概要
+\include{abstract}
+% 実装の概要->開発内容
+ \include{implementation}
+% 評価->開発内容
+%\include{evaluation}
 
-% 実装の概要
-\include{implementation}
-
-% 評価
-\include{evaluation}
-
-% 社会へのインパクト
+% 社会へのインパクト->開発成果の特徴
 \include{publicity}
 
-% おわりに
+%追加：今後の課題と展望
+\include{futureworks}
+
+%追加：実施計画書内容との相違点
+\include{difference}
+
+%追加：開発分担
+\include{taskassignation}
+
+% おわりに->謝辞
 \include{conclusions}
 
+%追加：付録
+\include{appendix}
 \end{document}
