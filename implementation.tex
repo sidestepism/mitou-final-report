@@ -281,52 +281,63 @@ CCSを用いた手法ではパラメータの知覚が難しいものであっ�
 
 \heading{2015年6月}
 東京大学にて開催されたハッカソン「JPHACKS」において制作した，「Sight」プロジェクト考案当初のデザインスケッチ．
-このスケッチをベースに，プロダクトの方向性や変更点についてチームで議論を進めた．
+このスケッチをベースに，プロダクトの方向性や変更点についてチームで議論を進めた．(図.\ref{fig:design_1})
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[height=40mm]{images/hardware/design_1.jpg}
 \end{center}
+\caption{プロジェクト考案当初のデザインスケッチ}
+\label{fig:design_1}
 \end{figure}
 
 \heading{2015年8月}
 内蔵するカメラやPC等の制限に囚われない理想的なプロダクトの3DCGイメージをモデリングソフト（fusion360）を用いて作成．
-プロジェクトの目的は単なる生活向上ではなく「見る」という行為の追求に主眼を置いていた為，あえて目を覆い視覚をシャットダウンすることで，「目で見る」という既成概念を取り払うコンセプチュアルなデザインとした．
+プロジェクトの目的は単なる生活向上ではなく「見る」という行為の追求に主眼を置いていた為，あえて目を覆い視覚をシャットダウンすることで，「目で見る」という既成概念を取り払うコンセプチュアルなデザインとした．(図.\ref{fig:design_2})
+
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[height=40mm]{images/hardware/design_2.jpg}
 \end{center}
+\caption{コンセプチュアルデザイン}
+\label{fig:design_2}
 \end{figure}
 
 \heading{2015年9月}
-先のイメージを元に，Xtionやスピーカーを考慮した実用的なモデルをモデリング．
+先のイメージを元に，Xtionやスピーカーを考慮した実用的なモデルをモデリング．(図.\ref{fig:design_3})
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[height=45mm]{images/hardware/design_3.jpg}
 \end{center}
+\caption{モデリングの様子}
+\label{fig:design_3}
 \end{figure}
 
 \heading{2015年10月}
-DMM.makeAKIBAにて，制作したモデリングデータを3Dプリンタを用いて出力．Xtionやスピーカーの内蔵法，コード配線の設計，装着した際のフィット感等を実際に着けて確認し，修正を加えながらUXの改善に努めた．また，出力後はヤスリ掛けやパテによる穴埋め，下地となるサフの吹き付け，ガンスプレーを使用した塗装も行い，見た目としての完成度も向上させた．
+DMM.makeAKIBAにて，制作したモデリングデータを3Dプリンタを用いて出力．Xtionやスピーカーの内蔵法，コード配線の設計，装着した際のフィット感等を実際に着けて確認し，修正を加えながらUXの改善に努めた．また，出力後はヤスリ掛けやパテによる穴埋め，下地となるサフの吹き付け，ガンスプレーを使用した塗装も行い，見た目としての完成度も向上させた．(図.\ref{fig:design_4})
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[height=80mm]{images/hardware/design_4.jpg}
+\includegraphics[height=75mm]{images/hardware/design_4.jpg}
 \end{center}
+\caption{3Dプリントの工程}
+\label{fig:design_4}
 \end{figure}
 
-モデルは複数のパーツに分離しており，各々のパーツに凹凸を設けることで，度重なる試行錯誤の支障とならず，接着の一切不要．ハメ合わせの構造となっている凹凸の位置や形，幅についても何度も検証を繰り返し，より合理的で耐久性の強い組み合わせ方を試みた．
+モデルは複数のパーツに分離しており，各々のパーツに凹凸を設けることで，度重なる試行錯誤の支障とならず，接着の一切不要．ハメ合わせの構造となっている凹凸の位置や形，幅についても何度も検証を繰り返し，より合理的で耐久性の強い組み合わせ方を試みた．(図.\ref{fig:design_5})
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[height=80mm]{images/hardware/design_5.jpg}
+\includegraphics[height=60mm]{images/hardware/design_5.jpg}
 \end{center}
+\caption{はめ込み構造}
+\label{fig:design_5}
 \end{figure}
 
 \heading{2016年1月}
-以前のモデルで発覚した問題点を総ざらいし、改善バージョンをモデリングした。
+以前のモデルで発覚した問題点を総ざらいし、改善バージョンをモデリングした。(図.\ref{fig:design_6})
 \begin{itemize}
     \item イヤホンのジョイント部分の折れやすさ → デザイン性を保ちつつ幅や構造を見直
     \item 2バンド固定の緩さ→通し穴の位置を調整し、頭部とバンドの隙間をほぼゼロに
@@ -336,16 +347,20 @@ DMM.makeAKIBAにて，制作したモデリングデータを3Dプ�
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[height=80mm]{images/hardware/design_6.jpg}
+\includegraphics[height=70mm]{images/hardware/design_6.jpg}
 \end{center}
+\caption{デザインの改良}
+\label{fig:design_6}
 \end{figure}
 
 \heading{2016年2月}
-微調整を繰り返しながら最終成果報告会に向けた最終 ver を出力し、完成。
+微調整を繰り返しながら最終成果報告会に向けた最終 ver を出力し、完成。(図.\ref{fig:design_7})
 \begin{figure}[h]
 \begin{center}
-\includegraphics[height=80mm]{images/hardware/design_7.jpg}
+\includegraphics[height=60mm]{images/hardware/design_7.jpg}
 \end{center}
+\caption{最終バージョンのハードウェア}
+\label{fig:design_7}
 \end{figure}
 
 \subsection{評価}
